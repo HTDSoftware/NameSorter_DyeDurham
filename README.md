@@ -54,22 +54,22 @@ Overview: The NameSorter application is designed to sort names from an input fil
 
 **Configuration: **
   ** appsettings.json: The application settings are defined in the appsettings.json file. Below is an example configuration:**
-  { "AppSettings": { "UseConsoleOutput": true, "UseFileOutput": true, "OutputFilename": "output.txt" } }
-  UseConsoleOutput: Enables or disables console output. 
-  UseFileOutput: Enables or disables file output. 
-  OutputFilename: Specifies the file name for output.
+    { "AppSettings": { "UseConsoleOutput": true, "UseFileOutput": true, "OutputFilename": "output.txt" } }
+    UseConsoleOutput: Enables or disables console output. 
+    UseFileOutput: Enables or disables file output. 
+    OutputFilename: Specifies the file name for output.
 
 **Usage: Command-Line: Run the application from the command line with the following syntax:**
-**  NameSorter_DyeDurham.exe <input-file-name>**
-  Example: Input File (input.txt): John Doe Jane Smith Charlie Brown
-  Command: NameSorter_DyeDurham.exe input.txt
-  Output: Console: Charlie Brown John Doe Jane Smith
-  File (output.txt): Charlie Brown John Doe Jane Smith
-  Error Handling: Missing Input File: Error: File not found: <filename> Resolution: Ensure the input file exists at the specified path.
-  No Output Method Configured: Error: No output method is configured. Resolution: Enable either UseConsoleOutput or UseFileOutput in the configuration.
-  Invalid Configuration: Error: UseFileOutput is true, but OutputFileName is not set. Resolution: Set a valid OutputFilename in the configuration.
-  Logging: Library: Serilog Purpose: Logs application events, errors, and debugging information. Configuration: Logs are written to the console and a rolling file (logs/log-.txt). Usage: Injected into services for logging important events.
+  **  NameSorter_DyeDurham.exe <input-file-name>**
+    Example: Input File (input.txt): John Doe Jane Smith Charlie Brown
+    Command: NameSorter_DyeDurham.exe input.txt
+    Output: Console: Charlie Brown John Doe Jane Smith
+    File (output.txt): Charlie Brown John Doe Jane Smith
+    Error Handling: Missing Input File: Error: File not found: <filename> Resolution: Ensure the input file exists at the specified path.
+    No Output Method Configured: Error: No output method is configured. Resolution: Enable either UseConsoleOutput or UseFileOutput in the configuration.
+    Invalid Configuration: Error: UseFileOutput is true, but OutputFileName is not set. Resolution: Set a valid OutputFilename in the configuration.
+    Logging: Library: Serilog Purpose: Logs application events, errors, and debugging information. Configuration: Logs are written to the console and a rolling file (logs/log-.txt). Usage: Injected into services for logging important events.
   
   **Testing: The application includes both unit and integration tests to ensure reliability.**
-  **Unit Tests: Validate individual services like FileOutputWriterService and NameProcessingService.**
-  **Integration Tests: Test the end-to-end functionality of the application, including file and console outputs.**
+    **Unit Tests: Validate individual services like FileOutputWriterService and NameProcessingService.**
+    **Integration Tests: Test the end-to-end functionality of the application, including file and console outputs.**
