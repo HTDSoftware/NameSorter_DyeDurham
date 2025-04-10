@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>NameSorter_DyeDurham.Infrastructure</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NameSorter_DyeDurham.Application\NameSorter_DyeDurham.Application.csproj" />
+    <ProjectReference Include="..\NameSorter_DyeDurham.Domain\NameSorter_DyeDurham.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

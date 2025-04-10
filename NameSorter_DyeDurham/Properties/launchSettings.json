@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "NameSorter-DyeDurham": {
+      "commandName": "Project",
+      "commandLineArgs": "unsorted-names-list.txt"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
