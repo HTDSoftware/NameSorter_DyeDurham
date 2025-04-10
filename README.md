@@ -54,7 +54,8 @@ Overview: The NameSorter application is designed to sort names from an input fil
 
 **Configuration: **
 
-  appsettings.json: The application settings are defined in the appsettings.json file. Below is an example configuration:
+  appsettings.json: The application settings are defined in the appsettings.json file. 
+  Below is an example configuration:
   { "AppSettings": 
     { 
       "UseConsoleOutput": true, 
