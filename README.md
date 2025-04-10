@@ -68,7 +68,7 @@ Overview: The NameSorter application is designed to sort names from an input fil
   OutputFilename: Specifies the file name for output.
 
 **Usage: Command-Line: Run the application from the command line with the following syntax:**
-  NameSorter_DyeDurham.exe <input-file-name>
+  NameSorter_DyeDurham.exe input-file-name
   
 **Example: Input File (input.txt): John Doe Jane Smith Charlie Brown**
   Command: NameSorter_DyeDurham.exe input.txt
