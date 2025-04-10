@@ -53,16 +53,24 @@ Overview: The NameSorter application is designed to sort names from an input fil
     •	CompositeOutputWriterService: Combines multiple output writers to handle both file and console outputs.
 
 **Configuration: **
-  ** appsettings.json: The application settings are defined in the appsettings.json file. Below is an example configuration:**
-    { "AppSettings": { "UseConsoleOutput": true, "UseFileOutput": true, "OutputFilename": "output.txt" } }
-    UseConsoleOutput: Enables or disables console output. 
-    UseFileOutput: Enables or disables file output. 
-    OutputFilename: Specifies the file name for output.
+
+  appsettings.json: The application settings are defined in the appsettings.json file. Below is an example configuration:
+  { "AppSettings": 
+    { 
+      "UseConsoleOutput": true, 
+      "UseFileOutput": true, 
+      "OutputFilename": "output.txt" 
+    } 
+  }
+  
+  UseConsoleOutput: Enables or disables console output. 
+  UseFileOutput: Enables or disables file output. 
+  OutputFilename: Specifies the file name for output.
 
 **Usage: Command-Line: Run the application from the command line with the following syntax:**
   NameSorter_DyeDurham.exe <input-file-name>
   
-  Example: Input File (input.txt): John Doe Jane Smith Charlie Brown
+**Example: Input File (input.txt): John Doe Jane Smith Charlie Brown**
   Command: NameSorter_DyeDurham.exe input.txt
   Output: Console: Charlie Brown John Doe Jane Smith
   File (output.txt): Charlie Brown John Doe Jane Smith
