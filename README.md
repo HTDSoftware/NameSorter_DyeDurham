@@ -20,7 +20,7 @@ Overview: The NameSorter application is designed to sort names from an input fil
   •	Uses Serilog for logging application events and errors.
 
 **Architecture:**
-Services: The application is built around several services, each responsible for a specific task.
+**Services: The application is built around several services, each responsible for a specific task.**
    
   **AppConfigurationService:**
     •	Purpose: Manages application settings.
@@ -53,14 +53,14 @@ Services: The application is built around several services, each responsible for
     •	CompositeOutputWriterService: Combines multiple output writers to handle both file and console outputs.
 
 **Configuration: **
-  appsettings.json: The application settings are defined in the appsettings.json file. Below is an example configuration:
+  ** appsettings.json: The application settings are defined in the appsettings.json file. Below is an example configuration:**
   { "AppSettings": { "UseConsoleOutput": true, "UseFileOutput": true, "OutputFilename": "output.txt" } }
   UseConsoleOutput: Enables or disables console output. 
   UseFileOutput: Enables or disables file output. 
   OutputFilename: Specifies the file name for output.
 
 **Usage: Command-Line: Run the application from the command line with the following syntax:**
-  NameSorter_DyeDurham.exe <input-file-name>
+**  NameSorter_DyeDurham.exe <input-file-name>**
   Example: Input File (input.txt): John Doe Jane Smith Charlie Brown
   Command: NameSorter_DyeDurham.exe input.txt
   Output: Console: Charlie Brown John Doe Jane Smith
@@ -70,6 +70,6 @@ Services: The application is built around several services, each responsible for
   Invalid Configuration: Error: UseFileOutput is true, but OutputFileName is not set. Resolution: Set a valid OutputFilename in the configuration.
   Logging: Library: Serilog Purpose: Logs application events, errors, and debugging information. Configuration: Logs are written to the console and a rolling file (logs/log-.txt). Usage: Injected into services for logging important events.
   
-  Testing: The application includes both unit and integration tests to ensure reliability.
-  Unit Tests: Validate individual services like FileOutputWriterService and NameProcessingService.
-  Integration Tests: Test the end-to-end functionality of the application, including file and console outputs.
+  **Testing: The application includes both unit and integration tests to ensure reliability.**
+  **Unit Tests: Validate individual services like FileOutputWriterService and NameProcessingService.**
+  **Integration Tests: Test the end-to-end functionality of the application, including file and console outputs.**
